@@ -43,6 +43,13 @@ class AssetManager {
     getAsset(path) {
         return this.cache[path];
     };
+
+    autoRepeat(path) {
+        var aud = this.cache[path];
+        aud.addEventListener("ended", function () {
+            aud.play();
+        });
+    };
 };
 
 
