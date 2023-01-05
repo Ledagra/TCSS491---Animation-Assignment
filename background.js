@@ -1,8 +1,5 @@
 class Background {
     constructor(game) {
-        this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./Backgrounds/Newbarktown_map.png"), 0, 0, 500, 500, 1, 0.02);
-
 
     };
 
@@ -12,6 +9,6 @@ class Background {
     };
 
     draw(ctx) {
-        ctx.drawImage(ASSET_MANAGER.getAsset("./Backgrounds/Newbarktown_map.png"),0,-50, 750, 750);
+        ctx.drawImage(ASSET_MANAGER.getAsset("./Backgrounds/Newbarktown_map.png"),0, 0, 512, 512);
     };
 }

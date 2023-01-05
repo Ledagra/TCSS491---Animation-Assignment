@@ -1,21 +1,14 @@
 class MainCharacter {
     constructor(game) {
-        this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./Sprites/pokemonMC.png"), 0, 0, 93, 150, 24, 0.025);
-
-        this.speed = 185;
-        this.x = 0;
-        this.y = 0;
-
+       this.game = game;
+       this.animator = new Animator(ASSET_MANAGER.getAsset("./Sprites/pokemonMC.png"), 150, 10, 14, 20, 3, 0.7);
     };
 
     update() {
-        this.x += this.speed * this.game.clockTick;
-        if(this.x > 1500) this.x = 0;
 
     };
 
     draw(ctx) {
-        ctx.drawImage(ASSET_MANAGER.getAsset("./Sprites/pokemonMC.png"),0, 0);
+        this.animator.drawFrame(this.game.clockTick, ctx, 12, 220);
     };
 }
