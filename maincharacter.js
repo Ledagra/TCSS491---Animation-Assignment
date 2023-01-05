@@ -21,6 +21,6 @@ class MainCharacter {
 
         ctx.strokeRect(100, 110, 100, 100);
 
-        this.animator.drawframe(this.game.clockTick, ctx, this.x,260)
+        this.animator.drawFrame(this.game.clockTick, ctx, this.x,260)
     };
 }
