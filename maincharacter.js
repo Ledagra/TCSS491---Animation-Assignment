@@ -16,11 +16,6 @@ class MainCharacter {
     };
 
     draw(ctx) {
-        ctx.fillStyle = "White";
-        ctx.strokeStyle = "Red";
-
-        ctx.strokeRect(100, 110, 100, 100);
-
-        this.animator.drawFrame(this.game.clockTick, ctx, this.x,260)
+        ctx.drawImage(ASSET_MANAGER.getAsset("./Sprites/pokemonMC.png"),0, 0);
     };
 }

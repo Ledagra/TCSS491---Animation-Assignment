@@ -12,6 +12,6 @@ class Background {
     };
 
     draw(ctx) {
-        ctx.drawImage(ASSET_MANAGER.getAsset("./Backgrounds/Newbarktown_map.png"),0,0, 512, 512);
+        ctx.drawImage(ASSET_MANAGER.getAsset("./Backgrounds/Newbarktown_map.png"),0,-50, 750, 750);
     };
 }
