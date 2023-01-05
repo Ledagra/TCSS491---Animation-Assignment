@@ -16,6 +16,11 @@ class MainCharacter {
     };
 
     draw(ctx) {
+        ctx.fillStyle = "White";
+        ctx.strokeStyle = "Red";
+
+        ctx.strokeRect(100, 110, 100, 100);
+
         this.animator.drawframe(this.game.clockTick, ctx, this.x,260)
     };
 }
